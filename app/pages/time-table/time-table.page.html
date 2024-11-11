@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Class Timetable</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="timetable-content">
+  <ion-grid>
+    <ion-row class="table-header">
+      <ion-col class="day-col">Time</ion-col>
+      <ion-col class="day-col">Monday</ion-col>
+      <ion-col class="day-col">Tuesday</ion-col>
+      <ion-col class="day-col">Wednesday</ion-col>
+      <ion-col class="day-col">Thursday</ion-col>
+      <ion-col class="day-col">Friday</ion-col>
+    </ion-row>
+
+    <!-- Timetable Rows -->
+    <ion-row class="table-row">
+      <ion-col class="time-col">9:00 - 10:00 AM</ion-col>
+      <ion-col class="class-col">Web Development <br><span class="teacher">Mr. John</span></ion-col>
+      <ion-col class="class-col">Cyber Security <br><span class="teacher">Ms. Smith</span></ion-col>
+      <ion-col class="class-col">Machine Learning <br><span class="teacher">Dr. Lee</span></ion-col>
+      <ion-col class="class-col">Data Science <br><span class="teacher">Dr. Allen</span></ion-col>
+      <ion-col class="class-col">AI Basics <br><span class="teacher">Ms. Davis</span></ion-col>
+    </ion-row>
+    
+    <ion-row class="table-row">
+      <ion-col class="time-col">10:30 - 11:30 AM</ion-col>
+      <ion-col class="class-col">Machine Learning <br><span class="teacher">Dr. Lee</span></ion-col>
+      <ion-col class="class-col">Data Science <br><span class="teacher">Dr. Allen</span></ion-col>
+      <ion-col class="class-col">Cyber Security <br><span class="teacher">Ms. Smith</span></ion-col>
+      <ion-col class="class-col">AI Basics <br><span class="teacher">Ms. Davis</span></ion-col>
+      <ion-col class="class-col">Web Development <br><span class="teacher">Mr. John</span></ion-col>
+    </ion-row>
+
+    <!-- Additional rows as needed -->
+
+  </ion-grid>
+</ion-content>

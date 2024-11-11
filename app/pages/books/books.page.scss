@@ -1,0 +1,81 @@
+.page-content {
+  --background: linear-gradient(to bottom, #831e79, #5645ad);
+  padding: 20px; 
+}
+
+.custom-header {
+  --background: linear-gradient(to right, #831e79, #5645ad);
+  height: 100px; 
+  padding: 10px; 
+  display: flex;
+  align-items: center; 
+}
+
+.header-title {
+  flex: 1;
+  color: white; 
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 200px; 
+  height: 45px;
+  border-radius: 10px;
+  background-color: white;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.search-button {
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 45px;
+  height: 45px;
+  --background: linear-gradient(135deg, #831e79, #5645ad);
+}
+
+
+.category-section {
+  margin-top: 20px;
+}
+
+.category-title {
+  color: white;
+  font-size: 24px; 
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+
+.course-card { 
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: ( #831e79, #5645ad);
+  transition: transform 0.2s; 
+}
+
+.course-card:hover {
+  transform: scale(1.02); 
+}
+
+.course-card ion-img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 150px; 
+  object-fit: cover; 
+}
+
+.course-card-title {
+  font-size: 18px; 
+}
+
+.course-card-subtitle {
+  font-size: 14px; 
+}

@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/home"></ion-back-button> <!-- Back Button -->
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Your profile content goes here -->
+
+
+<ion-content class="ion-padding">
+  <div class="profile-container">
+    <ion-card class="profile-card">
+      <div class="image d-flex flex-column justify-content-center align-items-center">
+        <!-- Profile Image Button -->
+        <ion-button fill="clear">
+          <img src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg" height="100" width="100" />
+        </ion-button>
+        <span class="name mt-3">Manish Raj</span>
+        <span class="idd">BCA</span>
+
+        <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+          <span class="idd1">7008515262</span>
+          <ion-icon name="copy" class="icon-copy"></ion-icon>
+        </div>
+
+        <!-- Followers Count -->
+        <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+          <span class="number">1069 <span class="follow">Points </span></span>
+        </div>
+
+        <!-- Edit Profile Button -->
+        <div class="d-flex mt-2">
+          <ion-button expand="full" class="btn-dark">Edit Profile</ion-button>
+        </div>
+
+        <!-- Profile Description -->
+        <div class="text mt-3">
+          Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center">
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+
+        <!-- Join Date -->
+        <div class="px-2 rounded mt-4 date">
+          <span class="join">Joined May, 2021</span>
+        </div>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

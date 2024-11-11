@@ -1,0 +1,49 @@
+.test-page-content {
+  padding: 16px;
+  background-color: #f9f9f9;
+}
+
+.test-card {
+  margin: 10px 0;
+  --background: #ffffff;
+  border-radius: 8px;
+}
+
+.test-info {
+  display: flex;
+  align-items: center;
+}
+
+.test-badge {
+  background-color: #ffbf00;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+
+.test-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.test-details {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.language-link {
+  color: #007bff;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.button-col ion-button {
+  --background: #00bcd4;
+  --color: #ffffff;
+  font-size: 0.9rem;
+}

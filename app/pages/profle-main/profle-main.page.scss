@@ -1,0 +1,93 @@
+/* Profile Page Styles - Light Theme */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  .profile-card {
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: #fff; /* Light background for the card */
+  }
+  
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 16px;
+    color: #333; /* Dark text color */
+  }
+  
+  .idd {
+    font-size: 1rem;
+    color: #888;
+    margin-top: 4px;
+  }
+  
+  .idd1 {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .icon-copy {
+    font-size: 1.2rem;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 5px;
+    color: #333; /* Dark text color */
+  }
+  
+  .follow {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .btn-dark {
+    --background: #3880ff; /* Blue background for button */
+    --color: #fff; /* White text color */
+    margin-top: 16px;
+    border-radius: 8px;
+  }
+  
+  .text {
+    font-size: 1rem;
+    color: #333; /* Dark text color */
+    margin-top: 16px;
+  }
+  
+  .icons {
+    font-size: 1.5rem;
+    color: #444;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .date {
+    background-color: #f4f4f4; /* Light background for the date box */
+    border-radius: 12px;
+    padding: 8px 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .join {
+    color: #555; /* Darker color for the "Joined" text */
+  }
+  

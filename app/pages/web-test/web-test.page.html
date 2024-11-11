@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Web Development Test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="test-content">
+  <!-- Test Instructions -->
+  <div class="test-instructions" *ngIf="!testStarted && !testSubmitted">
+    <h2>Instructions</h2>
+    <p>This test consists of 5 questions. You have 6 minutes to complete it.</p>
+    <p>Click "Start Test" to begin the timer and display the questions.</p>
+  </div>
+
+  <!-- Start Test Button -->
+  <div class="start-test" *ngIf="!testStarted && !testSubmitted">
+    <ion-button expand="block" color="success" (click)="startTest()">Start Test</ion-button>
+  </div>
+
+  <!-- Timer Display -->
+  <div *ngIf="testStarted && !testSubmitted" class="timer">
+    Time Remaining: <span>{{ minutes }}:{{ seconds | number: '2.0' }}</span>
+  </div>
+
+  <!-- Test Questions -->
+  <div *ngIf="testStarted && !testSubmitted" class="questions">
+    <ion-card *ngFor="let question of questions; let i = index">
+      <ion-card-header>
+        <ion-card-title>Question {{ i + 1 }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{ question.text }}</p>
+        <ion-radio-group [(ngModel)]="question.selectedAnswer">
+          <ion-item *ngFor="let option of question.options">
+            <ion-label>{{ option }}</ion-label>
+            <ion-radio slot="start" value="{{ option }}"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- Submit Test Button -->
+  <div *ngIf="testStarted && !testSubmitted" class="submit-test">
+    <ion-button expand="block" color="primary" (click)="submitTest()">Submit Test</ion-button>
+  </div>
+
+  <!-- Score Display -->
+  <div *ngIf="testSubmitted" class="score-display">
+    <h2>Your Score: {{ score }} / {{ questions.length }}</h2>
+    <p *ngIf="score === questions.length">Excellent! You got all answers correct.</p>
+    <p *ngIf="score >= questions.length / 2 && score < questions.length">Good job! Keep practicing to improve.</p>
+    <p *ngIf="score < questions.length / 2">Keep studying! You can improve with more practice.</p>
+  </div>
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- Back Button that navigates to Home -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Top Students</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="top-students-content">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Top 5 Students</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="students-container">
+        <!-- Student 1 -->
+        <ion-card *ngFor="let student of students" class="student-card">
+          <ion-img [src]="student.image" class="student-image"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{ student.name }}</ion-card-title>
+            <ion-label>Rank: {{ student.rank }}</ion-label>
+          </ion-card-header>
+        </ion-card>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,43 @@
+.timetable-content {
+  padding: 16px;
+}
+
+.table-header {
+  background-color: #2d8cff;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.day-col,
+.time-col,
+.class-col {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: center;
+}
+
+.class-col {
+  background-color: #f4f8fb;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.time-col {
+  font-weight: bold;
+  background-color: #f0f4f7;
+  color: #333;
+}
+
+.teacher {
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 5px;
+}
+
+.table-row:nth-child(even) .class-col {
+  background-color: #eaf3fa;
+}

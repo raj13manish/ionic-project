@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/home"></ion-back-button> <!-- Back Button -->
+    </ion-buttons>
+    <ion-title>Lecture Status</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let lecture of lectures" class="lecture-item">
+      <ion-label>
+        <h2>{{ lecture.title }}</h2>
+        <p>{{ lecture.description }}</p>
+      </ion-label>
+      <div class="status-container">
+        <!-- Animated progress bar with wave effect -->
+        <div class="progress-bar">
+          <div class="progress-wave" [style.width]="lecture.progress + '%'"></div>
+        </div>
+        <!-- Animated status icon based on lecture status -->
+        <ion-icon [name]="getStatusIcon(lecture.status)" slot="end" class="status-icon"
+                  [ngClass]="{'pulse': lecture.status === 'completed'}"></ion-icon>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

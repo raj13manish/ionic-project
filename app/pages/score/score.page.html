@@ -1,0 +1,35 @@
+<ion-content>
+  <ion-header translucent>
+    <ion-toolbar>
+      <!-- Back Button -->
+      <ion-buttons slot="start">
+        <ion-button routerLink="/home">
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Result</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Overall Performance Section -->
+  <div class="overall-performance">
+    <div class="progress-circle" [ngStyle]="{'--score': overallScore}">
+      <div class="inside-circle">{{ overallScore }}%</div>
+    </div>
+    <p>Overall Performance</p>
+  </div>
+
+  <!-- Subjects Section -->
+  <div class="score-container">
+    <ion-card *ngFor="let subject of subjects" class="score-card">
+      <ion-card-header class="card-header">
+        <ion-card-title>{{ subject.name }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="progress-circle" [ngStyle]="{'--score': subject.score}">
+          <div class="inside-circle">{{ subject.score }}%</div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
